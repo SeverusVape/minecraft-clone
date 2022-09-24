@@ -1,4 +1,4 @@
-import create from "zustand/react";
+import create from "zustand";
 import { nanoid } from "nanoid";
 
 export const useStore = create((set) => ({
@@ -6,8 +6,13 @@ export const useStore = create((set) => ({
     cubes: [
         {
             key: nanoid(),
-            pos: [1, 1, 1],
+            pos: [2, 0.5, 0],
             texture: "dirt",
+        },
+        {
+            key: nanoid(),
+            pos: [4, 0.5, 0],
+            texture: "wood",
         },
     ],
 
