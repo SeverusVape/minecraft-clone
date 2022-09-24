@@ -50,3 +50,21 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.image {
+    width: 30px;
+    height: 30px;
+}
+
+.texture-selector {
+    transform: scale(3);
+}
+
+.texture-selector img.active {
+    border: 1.5px solid red;
+}
+
+.menu {
+    top: 0px;
+    left: 10px;
+}

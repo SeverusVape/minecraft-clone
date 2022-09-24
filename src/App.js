@@ -5,6 +5,7 @@ import { Ground } from "./components/Ground";
 import { Player } from "./components/Player";
 import { FPV } from "./components/FPV";
 import { Cubes } from "./components/Cubes";
+import { TextureSelector } from "./components/TextureSelector";
 import { cursor } from "./images/images";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <div className="absolute centered">
                 <img src={cursor} alt="cursor" />
             </div>
+            <TextureSelector />
         </>
     );
 }

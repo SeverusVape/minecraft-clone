@@ -15,7 +15,6 @@ function actionByKey(key) {
         Digit6: "lava",
         Digit7: "stone",
     };
-
     return keyActionMap[key];
 }
 
