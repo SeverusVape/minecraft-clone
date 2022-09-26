@@ -6,7 +6,7 @@ import { Player } from "./components/Player";
 import { FPV } from "./components/FPV";
 import { Cubes } from "./components/Cubes";
 import { TextureSelector } from "./components/TextureSelector";
-
+import { Menu } from "./components/Menu";
 function App() {
     return (
         <>
@@ -22,8 +22,11 @@ function App() {
                     <Ground />
                 </Physics>
             </Canvas>
-            <div className="absolute centered">+</div>
+            <div className="absolute centered" style={{ color: "white" }}>
+                +
+            </div>
             <TextureSelector />
+            <Menu />
         </>
     );
 }
