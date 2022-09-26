@@ -3,7 +3,7 @@ import { useStore } from "../hooks/useStore";
 import { UseKeyBoard } from "../hooks/UseKeyBoard";
 import {
     dirtImg,
-    grassImg,
+    sandImg,
     glassImg,
     woodImg,
     logImg,
@@ -13,7 +13,7 @@ import {
 
 const images = {
     dirt: dirtImg,
-    grass: grassImg,
+    sand: sandImg,
     glass: glassImg,
     wood: woodImg,
     log: logImg,
@@ -27,12 +27,12 @@ export const TextureSelector = () => {
         state.texture,
         state.setTexture,
     ]);
-    const { dirt, grass, glass, wood, log, lava, stone } = UseKeyBoard();
+    const { dirt, sand, glass, wood, log, lava, stone } = UseKeyBoard();
 
     useEffect(() => {
         const textures = {
             dirt,
-            grass,
+            sand,
             glass,
             wood,
             log,
@@ -44,7 +44,7 @@ export const TextureSelector = () => {
         if (pressedTexture) {
             setTexture(pressedTexture[0]);
         }
-    }, [setTexture, dirt, grass, glass, wood, log, lava, stone]);
+    }, [setTexture, dirt, sand, glass, wood, log, lava, stone]);
 
     useEffect(() => {
         const visibilityTimeout = setTimeout(() => {

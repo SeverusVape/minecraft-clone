@@ -1,11 +1,12 @@
-import dirtImg from "./dirt.jpg";
-import grassImg from "./grass.jpg";
+import dirtImg from "./dirt.webp";
+import grassImg from "./grass.webp";
+import sandImg from "./sand.webp";
 import glassImg from "./glass.png";
-import logImg from "./log.jpg";
-import woodImg from "./wood.png";
-import lavaImg from "./lava.png";
-import stoneImg from "./stone.png";
-import cursor from "./cursor.png";
+import logImg from "./log.webp";
+import woodImg from "./wood.webp";
+import lavaImg from "./lava.webp";
+import stoneImg from "./stone.webp";
+// import cursor from "./cursor.png";
 
 export {
     dirtImg,
@@ -15,5 +16,5 @@ export {
     logImg,
     stoneImg,
     lavaImg,
-    cursor,
+    sandImg,
 };

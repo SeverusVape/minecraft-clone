@@ -3,6 +3,7 @@ import {
     dirtImg,
     grassImg,
     glassImg,
+    sandImg,
     woodImg,
     logImg,
     lavaImg,
@@ -11,6 +12,7 @@ import {
 
 const dirtTexture = new TextureLoader().load(dirtImg);
 const grassTexture = new TextureLoader().load(grassImg);
+const sandTexture = new TextureLoader().load(sandImg);
 const glassTexture = new TextureLoader().load(glassImg);
 const woodTexture = new TextureLoader().load(woodImg);
 const logTexture = new TextureLoader().load(logImg);
@@ -26,6 +28,7 @@ logTexture.magFilter = NearestFilter;
 groundTexture.magFilter = NearestFilter;
 stoneTexture.magFilter = NearestFilter;
 lavaTexture.magFilter = NearestFilter;
+sandTexture.magFilter = NearestFilter;
 
 groundTexture.wrapS = RepeatWrapping;
 groundTexture.wrapT = RepeatWrapping;
@@ -39,4 +42,5 @@ export {
     groundTexture,
     stoneTexture,
     lavaTexture,
+    sandTexture,
 };
